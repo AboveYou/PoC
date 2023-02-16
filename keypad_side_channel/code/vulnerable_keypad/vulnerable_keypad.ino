@@ -42,10 +42,10 @@ void blink(int led, int times) {
 
 // print to serial console
 void print(int led) {
-	if (led == 16) {
+	if (led == rejectLed) {
 		Serial.println("red LED");
 	}
-	if (led == 15) {
+	if (led == acceptLed) {
 		Serial.println("green LED");
 	}
 }
